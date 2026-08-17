@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | @lilbozo900</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mouse Follower Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Isaac<span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About me!</a>
+                <a href="#stack" class="nav-link">Stack</a>
+                <a href="#services" class="nav-link">Services</a>
+            </div>
+            <a href="#contact" class="nav-cta">Get in touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrap reveal">
+                <img src="image.png" alt="Isaac's Profile Picture" class="hero-pfp">
+            </div>
+            <h1 class="hero-title reveal">
+                Engineering robust systems<br>
+                with <span class="highlight">Luau</span>, <span class="highlight">C++</span> & <span class="highlight">Python</span>.
+            </h1>
+            <p class="hero-subtitle reveal">
+                I'm Isaac, a developer with 5 years of programming experience. I specialize in full-stack Roblox scripting, complex gameplay systems, and desktop utility development.
+            </p>
+            <div class="hero-links reveal">
+                <a href="#contact" class="btn-primary">Hire me</a>
+                <a href="#stack" class="btn-secondary">View my stack</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01 — About</span>
+                <h2 class="section-title">More than just a scripter.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>For the last 5 years, I've been immersed in software development. What started as general programming quickly evolved into a deep focus on Roblox Studio and Luau, where I've spent the last 3 years engineering full-stack gameplay systems, data management, and core loops for various games.</p>
+                    <p>Beyond Roblox, I work with C++ and Python to build desktop tweaking utilities, giving me a strong understanding of lower-level system interactions. Based in the UK and fluent in English, I prioritize clear communication and clean architecture in every project I touch.</p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Years Programming</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Luau & Studio</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Full</h3>
+                        <p>Stack Scripting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Section -->
+    <section id="stack" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02 — Tech Stack</span>
+                <h2 class="section-title">Tools I use daily.</h2>
+            </div>
+            <div class="stack-grid">
+                <div class="stack-card reveal">
+                    <h4>Luau / Lua</h4>
+                    <p>Primary language. 3 years of experience building full-stack systems, gameplay loops, DataStores, and optimized network scripts.</p>
+                </div>
+                <div class="stack-card reveal">
+                    <h4>C++</h4>
+                    <p>Used for creating desktop utilities and understanding memory management, algorithms, and performance-critical applications.</p>
+                </div>
+                <div class="stack-card reveal">
+                    <h4>Python</h4>
+                    <p>Utilized for backend logic, desktop tweaking utilities, and automation scripts to speed up development workflows.</p>
+                </div>
+                <div class="stack-card reveal">
+                    <h4>Roblox Studio</h4>
+                    <p>3 years of hands-on experience. Proficient in remote events, UI scripting, debugging, and structuring large codebases.</p>
+                </div>
+                <div class="stack-card reveal">
+                    <h4>AI</h4>
+                    <p>Used sparingly. I rely on my own problem-solving 95% of the time, utilizing AI only for minor edge-cases or quick reference.</p>
+                </div>
+                <div class="stack-card reveal">
+                    <h4>PC & 3 Monitors</h4>
+                    <p>My daily driver. A highly optimized multi-monitor setup for maximum workflow, debugging, and rapid iteration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03 — Services</span>
+                <h2 class="section-title">What I do.</h2>
+            </div>
+            <div class="services-list">
+                <div class="service-row reveal">
+                    <h3>01</h3>
+                    <div class="service-info">
+                        <h4>Full-Stack Roblox Scripting</h4>
+                        <p>End-to-end implementation of game systems, from client-side UI and interactions to secure server-side data processing.</p>
+                    </div>
+                </div>
+                <div class="service-row reveal">
+                    <h3>02</h3>
+                    <div class="service-info">
+                        <h4>System Architecture</h4>
+                        <p>Designing scalable, maintainable codebases for Roblox games to ensure smooth gameplay and easy future updates.</p>
+                    </div>
+                </div>
+                <div class="service-row reveal">
+                    <h3>03</h3>
+                    <div class="service-info">
+                        <h4>Desktop Utilities</h4>
+                        <p>Custom C++ and Python applications for system tweaking, automation, and desktop optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-card reveal">
+                <h2 class="contact-title">Let's build something.</h2>
+                <p class="contact-subtitle">Currently available for freelance work, full-system commissions, and desktop utility development.</p>
+                <div class="contact-methods">
+                    <a href="https://discord.com/users/1388625676973899776" class="contact-link" target="_blank">
+                        <div class="link-header">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                            <span class="link-label">Discord</span>
+                        </div>
+                        <span class="link-value">@lilbozo_900 <span class="arrow">↗</span></span>
+                    </a>
+                    <a href="https://www.roblox.com/users/9349749789/profile" class="contact-link" target="_blank">
+                        <div class="link-header">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.3 3.6L8.1 6.9L4.8 20.1L18 16.8L21.3 3.6ZM13.9 11.2L12.2 11.6L11.8 13.3L13.5 12.9L13.9 11.2Z"/></svg>
+                            <span class="link-label">Roblox</span>
+                        </div>
+                        <span class="link-value">@snxwycs <span class="arrow">↗</span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Contact me via my socials above to hire or for any inquiries</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
