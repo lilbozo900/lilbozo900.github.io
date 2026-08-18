@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5 {
     -webkit-text-fill-color: transparent;
     animation: shine 5s linear infinite;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.25));
-    padding-right: 0.1em; /* Prevents the ends from being cut off */
+    padding-right: 0.1em;
     padding-left: 0.05em;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
@@ -440,6 +440,80 @@ h1, h2, h3, h4, h5 {
     max-width: 600px;
 }
 
+/* Showcase */
+.showcase-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.showcase-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.showcase-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.showcase-video {
+    flex: 1;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: #000;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+    transition: all 0.4s var(--transition);
+}
+
+.showcase-video:hover {
+    border-color: var(--text-dim);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(255,255,255,0.05);
+}
+
+.showcase-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-desc {
+    flex: 1;
+}
+
+.showcase-desc h4 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.showcase-desc p {
+    color: var(--text-dim);
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-tags span {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--glass);
+}
+
 /* Contact */
 .contact-section {
     padding-bottom: 100px;
@@ -599,6 +673,15 @@ h1, h2, h3, h4, h5 {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+    /* Mobile Showcase stacking */
+    .showcase-item, .showcase-item:nth-child(even) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .showcase-list {
+        gap: 60px;
     }
 }
 
