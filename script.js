@@ -31,3 +31,4 @@ document.addEventListener('mouseleave', () => {
 document.addEventListener('mouseenter', () => {
     cursorGlow.style.opacity = '1';
 });
+
