@@ -1,4 +1,3 @@
-// Custom Cursor Glow Tracking
 const cursorGlow = document.getElementById('cursor-glow');
 
 document.addEventListener('mousemove', (e) => {
@@ -6,7 +5,6 @@ document.addEventListener('mousemove', (e) => {
     cursorGlow.style.top = e.clientY + 'px';
 });
 
-// Scroll Reveal Animations
 const revealElements = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver((entries) => {
@@ -24,7 +22,6 @@ revealElements.forEach(el => {
     observer.observe(el);
 });
 
-// Hide cursor when leaving window
 document.addEventListener('mouseleave', () => {
     cursorGlow.style.opacity = '0';
 });
