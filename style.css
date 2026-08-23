@@ -28,7 +28,6 @@ body {
     cursor: none;
 }
 
-/* Custom Cursor & Glow */
 #cursor-glow {
     width: 400px;
     height: 400px;
@@ -40,7 +39,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Ambient Background Glows */
 .ambient-glow {
     position: fixed;
     pointer-events: none;
@@ -48,6 +46,7 @@ body {
     border-radius: 50%;
     filter: blur(120px);
 }
+
 .glow-1 {
     top: -10%;
     left: 10%;
@@ -56,6 +55,7 @@ body {
     background: rgba(50, 100, 200, 0.05);
     animation: float-1 20s infinite alternate ease-in-out;
 }
+
 .glow-2 {
     bottom: 10%;
     right: -5%;
@@ -69,19 +69,18 @@ body {
     0% { transform: translate(0, 0); }
     100% { transform: translate(100px, 80px); }
 }
+
 @keyframes float-2 {
     0% { transform: translate(0, 0); }
     100% { transform: translate(-80px, -50px); }
 }
 
-/* Typography */
 h1, h2, h3, h4, h5 {
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 500;
     letter-spacing: -0.02em;
 }
 
-/* Cool Hero Title Highlights */
 .highlight {
     color: var(--text);
     font-style: italic;
@@ -103,7 +102,6 @@ h1, h2, h3, h4, h5 {
     to { background-position: 200% center; }
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 20px;
@@ -135,6 +133,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     gap: 8px;
 }
+
 .nav-logo span {
     color: var(--text-dim);
 }
@@ -171,7 +170,6 @@ h1, h2, h3, h4, h5 {
     transform: scale(1.05);
 }
 
-/* Hero */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -240,6 +238,7 @@ h1, h2, h3, h4, h5 {
     background: var(--text);
     color: var(--bg);
 }
+
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(255,255,255,0.1);
@@ -249,6 +248,7 @@ h1, h2, h3, h4, h5 {
     border: 1px solid var(--border);
     color: var(--text);
 }
+
 .btn-secondary:hover {
     background: var(--glass);
     border-color: var(--text-dim);
@@ -290,7 +290,6 @@ h1, h2, h3, h4, h5 {
     100% { opacity: 0; transform: translateY(10px); }
 }
 
-/* Sections */
 .section {
     padding: 150px 24px;
     position: relative;
@@ -321,7 +320,6 @@ h1, h2, h3, h4, h5 {
     font-size: clamp(2rem, 4vw, 3rem);
 }
 
-/* About */
 .about-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -352,7 +350,6 @@ h1, h2, h3, h4, h5 {
     color: var(--text-dim);
 }
 
-/* Stack */
 .stack-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -390,6 +387,7 @@ h1, h2, h3, h4, h5 {
     transform: translateY(-4px);
     box-shadow: 0 10px 40px rgba(255,255,255,0.05);
 }
+
 .stack-card:hover::before {
     opacity: 1;
 }
@@ -406,7 +404,6 @@ h1, h2, h3, h4, h5 {
     position: relative;
 }
 
-/* Services */
 .services-list {
     display: flex;
     flex-direction: column;
@@ -440,7 +437,6 @@ h1, h2, h3, h4, h5 {
     max-width: 600px;
 }
 
-/* Showcase */
 .showcase-list {
     display: flex;
     flex-direction: column;
@@ -514,7 +510,6 @@ h1, h2, h3, h4, h5 {
     background: var(--glass);
 }
 
-/* Contact */
 .contact-section {
     padding-bottom: 100px;
 }
@@ -624,7 +619,6 @@ h1, h2, h3, h4, h5 {
     transform: rotate(45deg) translateX(2px);
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 40px;
@@ -635,7 +629,6 @@ h1, h2, h3, h4, h5 {
     z-index: 2;
 }
 
-/* Reveal Animations */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -647,20 +640,23 @@ h1, h2, h3, h4, h5 {
     transform: translateY(0);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     body {
         cursor: auto;
     }
+
     #cursor-glow {
         display: none;
     }
+
     .nav-links {
         display: none;
     }
+
     .about-grid {
         grid-template-columns: 1fr;
     }
+
     .about-stats {
         border-left: none;
         border-top: 1px solid var(--border);
@@ -669,17 +665,20 @@ h1, h2, h3, h4, h5 {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .service-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    /* Mobile Showcase stacking */
-    .showcase-item, .showcase-item:nth-child(even) {
+
+    .showcase-item,
+    .showcase-item:nth-child(even) {
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
     }
+
     .showcase-list {
         gap: 60px;
     }
